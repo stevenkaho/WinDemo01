@@ -1,6 +1,7 @@
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
@@ -54,5 +55,14 @@ public class windemo01 {
 		});
 		btnHello.setBounds(258, 23, 87, 23);
 		frame.getContentPane().add(btnHello);
+		
+		JButton btnHello_1 = new JButton("Hello");
+		btnHello_1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				JOptionPane.showMessageDialog(frame, "Hello World");
+			}
+		});
+		btnHello_1.setBounds(229, 112, 87, 23);
+		frame.getContentPane().add(btnHello_1);
 	}
 }
